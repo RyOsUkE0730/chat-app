@@ -13,12 +13,40 @@
 .side--header {
   height: 100px;
   padding:0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side--user--name a {
+  font-size: 16px;
+  color:#FAFAFA;
+  align-items: center;
+  text-decoration: none;
+}
+
+.chat--start a {
+  border:1px solid lightblue;
+  font-size: 10px;
+  color: deepskyblue;
+  padding:14px;
+  text-decoration: none;
 }
 
 .side--main {
   background-color:#2F3E51;
   height: calc(100vh - 100px);
   padding:0px 20px;
+  overflow: scroll;
+}
+
+.side--chatroom {
+  margin:20px 0 40px;
+}
+
+.chatroom--name a {
+  text-decoration: none;
+  color:white;
 }
 
 /*chat----------------------------------------------------------------*/
