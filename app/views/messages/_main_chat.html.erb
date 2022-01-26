@@ -13,21 +13,7 @@
 </div>
 
 <div class="chat--main">
-  <div class="chat--content">
-    <div class="chat--upper--content">
-      <div class="chat--user--name">
-        hoge
-      </div>
-      <div class="main--time--stamp">
-        2022/2/23(Feb) 1:23:45
-      </div>
-    </div>
-    <div class="chat--lower--content">
-      <div class="main--message">
-        やあ
-      </div>
-    </div>
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 <%= form_with model: [@room, @message], class:'chat--footer', local: true do |f| %>
